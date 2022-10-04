@@ -133,6 +133,19 @@
                         interface IComboBox : ITextBox, IListBox { }
                     </code>
                 </p>
+                <p>Classes and structs can implement multiple interfaces. In the following example, the class EditBox implements both IControl and IDataBound.
+                    <code>
+                        interface IDataBound
+                        {
+                            void Bind(Binder b);
+                        }
+                        public class EditBox : IControl, IDataBound
+                        {
+                            public void Paint() { }
+                            public void Bind(Binder b) { }
+                        }
+                    </code>
+                </p>
             </article>
         </section>
     </main>
