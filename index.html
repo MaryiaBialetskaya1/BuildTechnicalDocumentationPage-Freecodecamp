@@ -84,6 +84,15 @@
                         }
                     </code>
                 </p>
+                <p>
+                    A class inherits the members of its base class. Inheritance means that a class implicitly contains almost all members of its base class. A class doesn't inherit the instance and static constructors, and the finalizer. A derived class can add new members to those members it inherits, but it can't remove the definition of an inherited member. In the previous example, Point3D inherits the X and Y members from Point, and every Point3D instance contains three properties, X, Y, and Z.
+                </p>
+                <p>An implicit conversion exists from a class type to any of its base class types. A variable of a class type can reference an instance of that class or an instance of any derived class. For example, given the previous class declarations, a variable of type Point can reference either a Point or a Point3D:
+                    <code>
+                        Point a = new(10, 20);
+                        Point b = new Point3D(10, 20, 30);
+                    </code>
+                </p>
             </article>
         </section>
         <section class="main-section"></section>
