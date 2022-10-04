@@ -69,7 +69,23 @@
                 </p>
             </article>
         </section>
-        <section class="main-section"></section>
+        <section class="main-section" id="Base_classes">
+            <header>Base classes</header>
+            <article>
+                <p>A class declaration may specify a base class. Follow the class name and type parameters with a colon and the name of the base class. Omitting a base class specification is the same as deriving from type object. In the following example, the base class of Point3D is Point. From the first example, the base class of Point is object:
+                    <code>
+                        public class Point3D : Point
+                        {
+                            public int Z { get; set; }
+                            public Point3D(int x, int y, int z) : base(x, y)
+                            {
+                                Z = z;
+                            }
+                        }
+                    </code>
+                </p>
+            </article>
+        </section>
         <section class="main-section"></section>
         <section class="main-section"></section>
     </main>
