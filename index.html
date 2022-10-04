@@ -146,6 +146,13 @@
                         }
                     </code>
                 </p>
+                <p>When a class or struct implements a particular interface, instances of that class or struct can be implicitly converted to that interface type. For example:
+                    <code>
+                        EditBox editBox = new();
+                        IControl control = editBox;
+                        IDataBound dataBound = editBox;
+                    </code>
+                </p>
             </article>
         </section>
     </main>
