@@ -155,6 +155,36 @@
                 </p>
             </article>
         </section>
+        <section class="main-section" id="Enums">
+            <header>Enums</header>
+            <article>
+                <p>An Enum type defines a set of constant values. The following enum declares constants that define different root vegetables:
+                    <code>
+                        public enum SomeRootVegetable
+                        {
+                            HorseRadish,
+                            Radish,
+                            Turnip
+                        }
+                    </code>
+                </p>
+                <p>
+                    You can also define an enum to be used in combination as flags. The following declaration declares a set of flags for the four seasons. Any combination of the seasons may be applied, including an All value that includes all seasons:
+                    <code>
+                        [Flags]
+                        public enum Seasons
+                        {
+                            None = 0,
+                            Summer = 1,
+                            Autumn = 2,
+                            Winter = 4,
+                            Spring = 8,
+                            All = Summer | Autumn | Winter | Spring
+                        }
+                    </code>
+                </p>
+            </article>
+        </section>
     </main>
 </body>
 </html>
