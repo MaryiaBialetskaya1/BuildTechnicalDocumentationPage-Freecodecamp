@@ -31,8 +31,15 @@
                             public Point(int x, int y) => (X, Y) = (x, y);
                         }
                     </code>
-                    Instances of classes are created using the new operator, which allocates memory for a new instance, invokes a constructor to initialize the instance, and returns a reference to the instance. The following statements create two Point objects and store references to those objects in two variables:
                 </p>
+                <p>
+                    Instances of classes are created using the new operator, which allocates memory for a new instance, invokes a constructor to initialize the instance, and returns a reference to the instance. The following statements create two Point objects and store references to those objects in two variables:
+                    <code>
+                        var p1 = new Point(0, 0);
+                        var p2 = new Point(10, 20);
+                    </code>
+                </p>
+                <p>The memory occupied by an object is automatically reclaimed when the object is no longer reachable. It's not necessary or possible to explicitly deallocate objects in C#.</p>
             </article>
         </section>
         <section class="main-section">
